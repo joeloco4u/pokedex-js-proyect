@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/summary.css">
+
+    <title>see that</title>
+</head>
+<body onload="seePokemon()">
+
+    <div class="chart">
+        <img src="" alt="logo" class="logo" id="sprite">
+    <h3 class="title" id="name"></h3>
+    <p class="space">
+        pokedex number: 
+        <span id="number"></span>
+    </p>
+    
+    <div id="weightAndHeight" class="name">
+        <p class="space">
+            height: 
+            <span id="height"></span>
+             m 
+        </p>
+        <p class="space">
+            |weight: 
+            <span id="weight"></span>
+             kg
+        </p>
+    </div>
+    </div>
+    
+    <button class="btn" onclick="shiny()">see shiny form</button>
+    <button class="btn" onclick="turn()">see other side</button>
+
+    <div class="moves-list">
+        <h3>movements</h3>
+        <ul id="moves"></ul>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/summary.js"></script>
+</body>
+</html>
